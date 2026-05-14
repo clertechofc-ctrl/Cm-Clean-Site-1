@@ -3,358 +3,1274 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CM Clean | Higienização de Sofás e Colchões</title>
-  <meta name="description" content="CM Clean especialista em higienização de sofás e colchões. Proteção contra fungos, bactérias e mau cheiro. Atendimento a domicílio em São Paulo e Grande ABC." />
+
+  <title>PS Ar Condicionado Sorocaba | Instalação e Manutenção</title>
+  <meta name="description" content="PS Ar Condicionado Sorocaba: instalação, limpeza, manutenção e infraestrutura. Orçamento rápido pelo WhatsApp." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --white:#ffffff;
-      --text:#123d73;
-      --text-2:#244f87;
-      --muted:#5f7593;
-      --blue:#0b5fd8;
-      --blue-2:#1e7cff;
-      --blue-3:#71b1ff;
-      --blue-dark:#083b86;
-      --shadow:0 18px 40px rgba(8,59,134,.10);
-      --shadow-2:0 10px 24px rgba(8,59,134,.08);
+      --bg:#071019;
+      --bg2:#0b1521;
+      --text:#f6fbff;
+      --muted:#b7c8d9;
+      --blue:#30b7ff;
+      --blue2:#0d72c8;
+      --red:#ff4d4d;
+      --orange:#ff9a3c;
       --wa:#25d366;
-      --wa-2:#159a39;
+      --wa2:#128c3d;
+      --shadow:0 22px 60px rgba(0,0,0,.36);
+      --safe-bottom:env(safe-area-inset-bottom,0px);
     }
 
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       font-family:"Inter",sans-serif;
-      background:
-        radial-gradient(circle at 10% 0%, rgba(113,177,255,.16), transparent 26%),
-        radial-gradient(circle at 90% 10%, rgba(11,95,216,.10), transparent 24%),
-        linear-gradient(180deg,#ffffff 0%,#f5f9ff 45%,#ffffff 100%);
       color:var(--text);
+      background:
+        radial-gradient(circle at 0% 0%,rgba(48,183,255,.20),transparent 30%),
+        radial-gradient(circle at 100% 0%,rgba(255,77,77,.16),transparent 28%),
+        linear-gradient(180deg,#06101a 0%,#0b1521 48%,#071019 100%);
       overflow-x:hidden;
+      padding-bottom:92px;
     }
 
-    a{text-decoration:none;color:inherit}
-    img{display:block;max-width:100%}
-    button,input,textarea,select{font-family:inherit}
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 
-    .container{width:min(1180px,calc(100% - 24px));margin:0 auto}
-    .section{padding:80px 0}
+    img,
+    video{
+      display:block;
+      max-width:100%;
+    }
+
+    button,
+    input,
+    select,
+    textarea{
+      font-family:inherit;
+    }
+
+    .container{
+      width:min(1120px,calc(100% - 24px));
+      margin:0 auto;
+    }
+
+    .section{
+      padding:54px 0;
+    }
 
     .tag{
-      display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;
-      background:rgba(11,95,216,.08);border:1px solid rgba(11,95,216,.12);
-      color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      width:max-content;
+      max-width:100%;
+      padding:9px 13px;
+      border-radius:999px;
+      background:rgba(48,183,255,.12);
+      border:1px solid rgba(48,183,255,.22);
+      color:#dff7ff;
+      font-size:10.5px;
+      font-weight:900;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      backdrop-filter:blur(10px);
     }
 
-    .section-top{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;margin-bottom:30px}
-    .section-title{font-family:"Oswald",sans-serif;font-size:clamp(34px,5vw,62px);line-height:.95;text-transform:uppercase;letter-spacing:.03em;color:var(--text)}
-    .section-title span,.gradient{background:linear-gradient(135deg,var(--blue-dark),var(--blue),var(--blue-2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .section-sub{max-width:860px;color:var(--muted);font-size:15px;line-height:1.8}
+    .tag::before{
+      content:"";
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--red),var(--blue));
+      box-shadow:0 0 0 6px rgba(48,183,255,.11);
+      flex:0 0 8px;
+    }
+
+    .section-head{
+      display:grid;
+      gap:12px;
+      margin-bottom:22px;
+    }
+
+    .section-head.center{
+      text-align:center;
+      justify-items:center;
+    }
+
+    .section-title{
+      font-size:clamp(28px,8vw,48px);
+      line-height:1.06;
+      letter-spacing:-.05em;
+      font-weight:950;
+      color:#fff;
+    }
+
+    .section-title span{
+      background:linear-gradient(135deg,var(--red),var(--orange),var(--blue));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    .section-sub{
+      color:var(--muted);
+      font-size:14.5px;
+      line-height:1.7;
+      max-width:760px;
+    }
 
     .btn{
-      position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      min-height:54px;padding:14px 24px;border:none;border-radius:14px;cursor:pointer;
-      font-family:"Oswald",sans-serif;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
-      transition:.25s ease;white-space:nowrap;
+      position:relative;
+      overflow:hidden;
+      border:none;
+      cursor:pointer;
+      width:100%;
+      min-height:52px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 18px;
+      font-size:13px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.035em;
+      transition:.22s ease;
+      -webkit-tap-highlight-color:transparent;
     }
-    .btn:hover{transform:translateY(-2px)}
-    .btn::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.28),transparent);transform:translateX(-130%);transition:.75s ease}
-    .btn:hover::before{transform:translateX(130%)}
-    .btn-blue{background:linear-gradient(135deg,var(--blue-dark),var(--blue),var(--blue-2));color:#fff;box-shadow:0 14px 30px rgba(11,95,216,.20)}
-    .btn-outline{background:#fff;color:var(--blue);border:1px solid rgba(11,95,216,.16);box-shadow:var(--shadow-2)}
-    .btn-wa{background:linear-gradient(135deg,var(--wa),var(--wa-2));color:#fff;box-shadow:0 14px 30px rgba(37,211,102,.22)}
 
-    .header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(11,95,216,.10);box-shadow:0 10px 26px rgba(8,59,134,.05)}
-    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px;min-width:0}
-    .brand-logo{width:64px;height:64px;border-radius:50%;overflow:hidden;background:#fff;border:2px solid rgba(11,95,216,.12);box-shadow:0 0 0 5px rgba(113,177,255,.10),0 14px 28px rgba(8,59,134,.12);animation:floatLogo 3.8s ease-in-out infinite;transition:.3s ease}
-    .brand-logo:hover{transform:scale(1.06) rotate(-3deg)}
-    .brand-logo img{width:100%;height:100%;object-fit:cover;object-position:center}
-    .brand-text{display:grid;gap:4px;line-height:1}
-    .brand-text strong{font-family:"Oswald",sans-serif;font-size:24px;text-transform:uppercase;letter-spacing:.04em;color:var(--text)}
-    .brand-text small{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:800}
-    .menu-wrap{display:flex;align-items:center;gap:14px}
-    .menu{display:flex;align-items:center;gap:18px}
-    .menu a{font-family:"Oswald",sans-serif;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#28486f;transition:.2s}
-    .menu a:hover{color:var(--blue)}
-    .header-cta{display:flex;align-items:center;gap:10px}
-    .mobile-toggle{display:none;width:46px;height:46px;border:none;border-radius:12px;background:rgba(11,95,216,.08);color:var(--blue);font-size:22px;cursor:pointer}
+    .btn:active{
+      transform:scale(.98);
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(120deg,transparent,rgba(255,255,255,.30),transparent);
+      transform:translateX(-130%);
+      transition:.65s ease;
+    }
+
+    .btn:hover::before{
+      transform:translateX(130%);
+    }
+
+    .btn-cold{
+      background:linear-gradient(135deg,var(--blue),var(--blue2));
+      color:#fff;
+      box-shadow:0 15px 30px rgba(48,183,255,.24);
+    }
+
+    .btn-wa{
+      background:linear-gradient(135deg,var(--wa),var(--wa2));
+      color:#fff;
+      box-shadow:0 15px 30px rgba(37,211,102,.26);
+    }
+
+    .btn-dark{
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.13);
+      backdrop-filter:blur(12px);
+    }
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(7,16,25,.82);
+      border-bottom:1px solid rgba(255,255,255,.08);
+      backdrop-filter:blur(16px);
+    }
+
+    .nav{
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+
+    .brand-logo-wrap{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      padding:2px;
+      background:conic-gradient(from 180deg,var(--red),var(--orange),var(--blue),var(--red));
+      box-shadow:0 12px 28px rgba(0,0,0,.25);
+      flex:0 0 54px;
+      animation:floatLogo 3.3s ease-in-out infinite;
+    }
+
+    .brand-logo{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:50%;
+      background:#fff;
+      border:2px solid rgba(255,255,255,.35);
+    }
+
+    .brand-text{
+      display:grid;
+      gap:3px;
+      line-height:1;
+      min-width:0;
+    }
+
+    .brand-text strong{
+      font-size:17px;
+      font-weight:950;
+      color:#fff;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:190px;
+    }
+
+    .brand-text small{
+      font-size:9.5px;
+      color:var(--muted);
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:190px;
+    }
+
+    .mobile-toggle{
+      width:44px;
+      height:44px;
+      border:none;
+      border-radius:14px;
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      font-size:24px;
+      cursor:pointer;
+      flex:0 0 44px;
+    }
+
+    .menu{
+      position:absolute;
+      top:72px;
+      left:12px;
+      right:12px;
+      display:none;
+      flex-direction:column;
+      gap:6px;
+      padding:12px;
+      border-radius:18px;
+      background:#0b1521;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+    }
+
+    .menu.open{
+      display:flex;
+    }
+
+    .menu a{
+      padding:13px 14px;
+      border-radius:14px;
+      background:rgba(255,255,255,.055);
+      color:#fff;
+      font-size:14px;
+      font-weight:850;
+    }
 
     .hero{
-      position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;
-      background:radial-gradient(circle at 12% 10%,rgba(113,177,255,.18),transparent 26%),radial-gradient(circle at 88% 14%,rgba(11,95,216,.12),transparent 24%),linear-gradient(135deg,#ffffff 0%,#f4f9ff 52%,#ffffff 100%);
+      position:relative;
+      min-height:calc(100svh - 72px);
+      display:flex;
+      align-items:flex-end;
+      overflow:hidden;
+      background:#061018;
     }
-    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(11,95,216,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(11,95,216,.035) 1px,transparent 1px);background-size:40px 40px;opacity:.7;pointer-events:none}
-    .hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px;padding:120px 0 96px}
-    .hero-content{display:grid;gap:18px;text-align:left}
-    .hero-badge{display:inline-flex;align-items:center;gap:8px;justify-self:start;background:#fff;border:1px solid rgba(11,95,216,.14);border-radius:999px;padding:11px 16px;color:var(--blue);font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:.11em;box-shadow:var(--shadow-2)}
-    .hero-badge::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--blue-2);box-shadow:0 0 0 6px rgba(30,124,255,.10)}
-    .hero-title{font-family:"Oswald",sans-serif;font-size:clamp(48px,7vw,96px);line-height:.9;letter-spacing:.03em;text-transform:uppercase;color:var(--text);max-width:760px}
-    .hero-title .line-2{display:block;background:linear-gradient(135deg,var(--blue-dark),var(--blue),var(--blue-2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .hero-sub{max-width:760px;font-size:clamp(18px,2vw,23px);line-height:1.6;color:#48617e}
-    .hero-sub span{color:var(--blue);font-weight:800}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
-    .hero-info{display:flex;flex-wrap:wrap;gap:12px;color:#5e7591;font-size:13px;text-transform:uppercase;letter-spacing:.10em;font-weight:800;margin-top:6px}
-    .hero-info b{color:var(--text)}
 
-    .hero-video-card{position:relative;overflow:hidden;border-radius:30px;background:#fff;border:1px solid rgba(11,95,216,.12);box-shadow:0 26px 70px rgba(8,59,134,.16);min-height:440px}
-    .hero-video-card::before{content:"";position:absolute;inset:-3px;background:linear-gradient(135deg,rgba(11,95,216,.22),rgba(113,177,255,.16));z-index:0}
-    .hero-video-card video{position:relative;z-index:1;width:100%;height:100%;min-height:440px;object-fit:cover;border-radius:28px;padding:6px}
-    .hero-video-card::after{content:"Vídeo em destaque";position:absolute;left:18px;bottom:18px;z-index:2;background:rgba(255,255,255,.92);color:var(--blue);border:1px solid rgba(11,95,216,.12);border-radius:999px;padding:10px 14px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.10em;box-shadow:0 10px 24px rgba(8,59,134,.12)}
-
-    .gallery-section{border-top:1px solid rgba(11,95,216,.10);border-bottom:1px solid rgba(11,95,216,.10);background:linear-gradient(180deg,#ffffff 0%,#f6faff 100%)}
-    .gallery-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:20px}
-    .gallery-text{display:grid;gap:10px}
-    .gallery-text h2{font-family:"Oswald",sans-serif;text-transform:uppercase;font-size:clamp(32px,5vw,56px);line-height:.95}
-    .gallery-text p{max-width:760px;color:var(--muted);font-size:14px;line-height:1.8}
-    .slider-controls{display:flex;gap:10px;flex-shrink:0}
-    .slider-btn{width:46px;height:46px;border:none;border-radius:50%;background:#fff;color:var(--blue);font-size:24px;cursor:pointer;border:1px solid rgba(11,95,216,.14);box-shadow:var(--shadow-2);transition:.2s}
-    .slider-btn:hover{transform:translateY(-2px);background:#edf6ff}
-    .work-slider{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 42px)/4);gap:14px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;padding:4px 2px 12px}
-    .work-slider::-webkit-scrollbar{display:none}
-    .work-card{position:relative;overflow:hidden;min-height:320px;border-radius:24px;background:#fff;border:1px solid rgba(11,95,216,.12);box-shadow:var(--shadow-2)}
-    .work-card img{width:100%;height:320px;object-fit:cover;transition:transform .45s ease}
-    .work-card:hover img{transform:scale(1.05)}
-    .work-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,59,134,.68),rgba(8,59,134,.02) 55%);pointer-events:none}
-    .work-caption{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;display:grid;gap:4px;color:#fff}
-    .work-caption strong{font-family:"Oswald",sans-serif;font-size:20px;text-transform:uppercase;letter-spacing:.04em;line-height:1}
-    .work-caption span{font-size:12px;color:#eff7ff;font-weight:700;line-height:1.45}
-
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .card{background:#fff;border:1px solid rgba(11,95,216,.10);border-radius:24px;padding:24px;box-shadow:var(--shadow-2);position:relative;overflow:hidden}
-    .card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(113,177,255,.10),transparent 34%);pointer-events:none}
-    .icon{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--blue-dark),var(--blue),var(--blue-2));color:#fff;font-size:24px;font-weight:900;margin-bottom:14px;box-shadow:0 12px 24px rgba(11,95,216,.18)}
-    .card h3{font-family:"Oswald",sans-serif;font-size:28px;text-transform:uppercase;line-height:1;margin-bottom:12px;color:var(--text)}
-    .card p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:16px}
-    .list{display:grid;gap:10px;list-style:none;margin-top:12px;margin-bottom:18px}
-    .list li{display:flex;gap:10px;align-items:flex-start;color:#2b4970;font-size:14px;line-height:1.6;font-weight:700}
-    .list li::before{content:"✦";color:var(--blue);font-weight:900;margin-top:1px}
-
-    .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px;align-items:stretch}
-    .map-card,.form-card{background:#fff;border:1px solid rgba(11,95,216,.10);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
-    .map-info,.form-box{padding:24px}
-    .map-info h3,.form-box h3{font-family:"Oswald",sans-serif;font-size:34px;text-transform:uppercase;line-height:1;margin:12px 0;color:var(--text)}
-    .map-info p,.form-box p{color:var(--muted);font-size:14px;line-height:1.8}
-    .map-frame{width:100%;height:380px;border:0}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
-    .full{grid-column:1/-1}
-    input,select,textarea{width:100%;min-height:52px;border-radius:14px;border:1px solid rgba(11,95,216,.12);background:#f8fbff;color:var(--text);padding:0 16px;font-size:14px;outline:none}
-    textarea{min-height:120px;resize:vertical;padding:14px 16px}
-    input:focus,select:focus,textarea:focus{border-color:rgba(30,124,255,.55);box-shadow:0 0 0 4px rgba(30,124,255,.10)}
-
-    .footer{padding:44px 0 90px;background:#f6faff}
-    .footer-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:22px;padding-top:24px;border-top:1px solid rgba(11,95,216,.10)}
-    .footer-box h4{font-family:"Oswald",sans-serif;text-transform:uppercase;font-size:22px;margin-bottom:10px;color:var(--text)}
-    .footer-box p,.footer-box li,.footer-box a{color:var(--muted);font-size:14px;line-height:1.8}
-    .footer-box ul{list-style:none;display:grid;gap:6px}
-    .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:18px;padding-top:18px;border-top:1px solid rgba(11,95,216,.10);color:var(--muted);font-size:13px}
-    .wa-float{position:fixed;right:16px;bottom:16px;z-index:1200;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--wa),var(--wa-2));color:#fff;box-shadow:0 18px 40px rgba(37,211,102,.35);animation:floatBtn 2.8s ease-in-out infinite}
-    .wa-float svg{width:32px;height:32px}
-
-    @keyframes floatLogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-    @keyframes floatBtn{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-
-    @media(max-width:1050px){
-      .menu{position:absolute;top:82px;left:12px;right:12px;background:#fff;border:1px solid rgba(11,95,216,.12);border-radius:18px;box-shadow:var(--shadow);padding:16px;display:none;flex-direction:column;align-items:flex-start}
-      .menu.open{display:flex}.mobile-toggle{display:inline-flex;align-items:center;justify-content:center}.header-cta{display:none}
-      .hero-layout{grid-template-columns:1fr;padding:110px 0 82px;gap:26px}.hero-content{text-align:center}.hero-badge{justify-self:center}.hero-actions{justify-content:center}.hero-info{justify-content:center}
-      .hero-video-card{min-height:320px;border-radius:24px}.hero-video-card video{min-height:320px;border-radius:22px}
-      .grid-3,.grid-2,.contact-grid,.footer-grid{grid-template-columns:1fr}.work-slider{grid-auto-columns:calc((100% - 14px)/2)}.map-frame{height:320px}
+    .hero-bg-image{
+      position:absolute;
+      inset:0;
+      z-index:0;
+      overflow:hidden;
+      background-image:url("assets/hero.jpg");
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      transform:scale(1.02);
     }
-    @media(max-width:760px){
-      .section{padding:60px 0}.hero{min-height:auto}.hero-title{font-size:44px}.hero-sub{font-size:18px}.work-slider{grid-auto-columns:84%}.work-card img,.work-card{height:290px;min-height:290px}.form-grid{grid-template-columns:1fr}.brand-text strong{font-size:19px}.brand-text small{font-size:9px}.brand-logo{width:56px;height:56px}.gallery-head{align-items:flex-start;flex-direction:column}
+
+    .hero-bg-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg,rgba(7,16,25,.34),rgba(7,16,25,.82) 55%,rgba(7,16,25,.99)),
+        linear-gradient(90deg,rgba(7,16,25,.92),rgba(7,16,25,.36),rgba(7,16,25,.86));
     }
-    @media(max-width:520px){.hero-title{font-size:38px}.hero-actions .btn{width:100%}.footer-bottom{display:grid}}
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:1;
+      background:
+        linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+      background-size:38px 38px;
+      opacity:.22;
+      mask-image:linear-gradient(to bottom,black,transparent 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:100%;
+      padding:34px 0 28px;
+    }
+
+    .hero-grid{
+      display:grid;
+      gap:18px;
+    }
+
+    .hero-content{
+      display:grid;
+      gap:16px;
+      max-width:710px;
+    }
+
+    .climate-logo-card{
+      width:112px;
+      height:112px;
+      border-radius:32px;
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,rgba(255,77,77,.95) 0%,rgba(255,154,60,.88) 42%,rgba(48,183,255,.92) 58%,rgba(13,114,200,.98) 100%);
+      box-shadow:0 18px 45px rgba(0,0,0,.34);
+      padding:3px;
+    }
+
+    .climate-logo-card::before{
+      content:"";
+      position:absolute;
+      inset:3px;
+      border-radius:29px;
+      background:rgba(255,255,255,.95);
+      z-index:0;
+    }
+
+    .climate-logo-card::after{
+      content:"";
+      position:absolute;
+      top:3px;
+      bottom:3px;
+      left:50%;
+      width:2px;
+      background:linear-gradient(180deg,var(--red),var(--blue));
+      z-index:1;
+      opacity:.55;
+    }
+
+    .climate-logo-inner{
+      position:relative;
+      z-index:2;
+      width:100%;
+      height:100%;
+      border-radius:29px;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      background:rgba(255,255,255,.82);
+    }
+
+    .climate-logo-inner img{
+      width:94%;
+      height:94%;
+      object-fit:contain;
+      border-radius:24px;
+    }
+
+    .split-labels{
+      position:absolute;
+      left:7px;
+      right:7px;
+      bottom:7px;
+      z-index:3;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:4px;
+    }
+
+    .split-labels span{
+      padding:4px 5px;
+      border-radius:999px;
+      font-size:8.5px;
+      font-weight:950;
+      text-align:center;
+      color:#fff;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+
+    .hot-label{
+      background:linear-gradient(135deg,var(--red),var(--orange));
+    }
+
+    .cold-label{
+      background:linear-gradient(135deg,var(--blue),var(--blue2));
+    }
+
+    .hero h1{
+      font-size:clamp(36px,12vw,76px);
+      line-height:.96;
+      letter-spacing:-.055em;
+      font-weight:950;
+      color:#fff;
+      text-shadow:0 16px 46px rgba(0,0,0,.38);
+    }
+
+    .hero h1 span{
+      display:block;
+      background:linear-gradient(135deg,var(--red),var(--orange),var(--blue));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    .hero p{
+      font-size:16px;
+      line-height:1.68;
+      color:#e9f3ff;
+      max-width:610px;
+    }
+
+    .hero-pills{
+      display:flex;
+      gap:8px;
+      overflow-x:auto;
+      scrollbar-width:none;
+      padding-bottom:3px;
+    }
+
+    .hero-pills::-webkit-scrollbar{
+      display:none;
+    }
+
+    .pill{
+      flex:0 0 auto;
+      padding:9px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.12);
+      color:#ecf7ff;
+      font-size:12px;
+      font-weight:900;
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-actions{
+      display:grid;
+      gap:10px;
+      margin-top:3px;
+    }
+
+    .fast-card{
+      display:grid;
+      gap:10px;
+      padding:15px;
+      border-radius:22px;
+      background:rgba(255,255,255,.075);
+      border:1px solid rgba(255,255,255,.11);
+      backdrop-filter:blur(12px);
+    }
+
+    .fast-line{
+      display:flex;
+      gap:9px;
+      align-items:flex-start;
+      color:#dfedfb;
+      font-size:13.5px;
+      line-height:1.5;
+      font-weight:750;
+    }
+
+    .fast-line b{
+      color:#fff;
+    }
+
+    .featured-section{
+      background:
+        radial-gradient(circle at 85% 0%,rgba(255,77,77,.12),transparent 28%),
+        radial-gradient(circle at 0% 15%,rgba(48,183,255,.12),transparent 26%),
+        linear-gradient(180deg,#091420 0%,#0d1823 100%);
+      border-top:1px solid rgba(255,255,255,.06);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+
+    .featured-grid{
+      display:grid;
+      gap:18px;
+    }
+
+    .featured-video-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:24px;
+      background:#000;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+    }
+
+    .featured-video-card::before{
+      content:"Vídeo em destaque";
+      position:absolute;
+      top:12px;
+      left:12px;
+      z-index:3;
+      padding:8px 11px;
+      border-radius:999px;
+      background:rgba(0,0,0,.62);
+      border:1px solid rgba(255,255,255,.14);
+      color:#fff;
+      font-size:10px;
+      font-weight:950;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+      backdrop-filter:blur(10px);
+    }
+
+    .featured-video-card video{
+      width:100%;
+      aspect-ratio:9/16;
+      object-fit:cover;
+      max-height:650px;
+      background:#000;
+    }
+
+    .featured-content{
+      display:grid;
+      gap:14px;
+      padding:18px;
+      border-radius:24px;
+      background:rgba(255,255,255,.065);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 14px 34px rgba(0,0,0,.20);
+    }
+
+    .featured-content h3{
+      font-size:clamp(24px,7vw,42px);
+      line-height:1.08;
+      letter-spacing:-.04em;
+      font-weight:950;
+      color:#fff;
+    }
+
+    .featured-content h3 span{
+      color:var(--blue);
+    }
+
+    .featured-content p{
+      color:var(--muted);
+      font-size:14.5px;
+      line-height:1.75;
+    }
+
+    .check-list{
+      display:grid;
+      gap:9px;
+    }
+
+    .check-list li{
+      list-style:none;
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      color:#eff7ff;
+      font-size:14px;
+      line-height:1.6;
+      font-weight:750;
+    }
+
+    .check-list li::before{
+      content:"✓";
+      width:21px;
+      height:21px;
+      flex:0 0 21px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--red),var(--blue));
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+      margin-top:1px;
+    }
+
+    .gallery-top{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      margin-bottom:18px;
+    }
+
+    .slider-controls{
+      display:flex;
+      gap:10px;
+    }
+
+    .slider-btn{
+      width:46px;
+      height:46px;
+      border:none;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      color:#fff;
+      font-size:24px;
+      cursor:pointer;
+      box-shadow:0 12px 28px rgba(0,0,0,.20);
+    }
+
+    .gallery-slider{
+      display:grid;
+      grid-auto-flow:column;
+      grid-auto-columns:80%;
+      gap:14px;
+      overflow-x:auto;
+      scroll-behavior:smooth;
+      scroll-snap-type:x mandatory;
+      scrollbar-width:none;
+      padding:3px 2px 12px;
+    }
+
+    .gallery-slider::-webkit-scrollbar{
+      display:none;
+    }
+
+    .gallery-card{
+      scroll-snap-align:start;
+      overflow:hidden;
+      border-radius:24px;
+      background:rgba(255,255,255,.065);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 16px 42px rgba(0,0,0,.22);
+    }
+
+    .gallery-card img{
+      width:100%;
+      aspect-ratio:4/5;
+      object-fit:cover;
+    }
+
+    .gallery-card .caption{
+      padding:14px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.6;
+    }
+
+    .swipe-note{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      color:#abc0d2;
+      font-size:12px;
+      font-weight:850;
+      margin-top:4px;
+    }
+
+    .quote-grid{
+      display:grid;
+      gap:16px;
+    }
+
+    .quote-card,
+    .info-card{
+      padding:20px;
+      border-radius:24px;
+      background:rgba(255,255,255,.065);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 16px 42px rgba(0,0,0,.22);
+      display:grid;
+      gap:14px;
+    }
+
+    .quote-card h3,
+    .info-card h3{
+      font-size:24px;
+      line-height:1.1;
+      letter-spacing:-.03em;
+      font-weight:950;
+      color:#fff;
+    }
+
+    .quote-card h3 span,
+    .info-card h3 span{
+      color:var(--blue);
+    }
+
+    .quote-card p,
+    .info-card p{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .form-grid{
+      display:grid;
+      gap:12px;
+    }
+
+    .field{
+      display:grid;
+      gap:7px;
+    }
+
+    .field label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:850;
+      color:#d6e2ee;
+    }
+
+    .field input,
+    .field select,
+    .field textarea{
+      width:100%;
+      border:none;
+      outline:none;
+      padding:15px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.11);
+      font-size:14px;
+    }
+
+    .field textarea{
+      min-height:110px;
+      resize:vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder{
+      color:#90a6ba;
+    }
+
+    .contact-list{
+      display:grid;
+      gap:10px;
+    }
+
+    .contact-list li{
+      list-style:none;
+      display:flex;
+      gap:9px;
+      align-items:flex-start;
+      color:#edf5ff;
+      font-size:14px;
+      line-height:1.6;
+      font-weight:750;
+    }
+
+    .contact-list li::before{
+      content:"•";
+      color:var(--blue);
+      font-size:24px;
+      line-height:1;
+      margin-top:-2px;
+    }
+
+    .footer{
+      padding:38px 0 94px;
+      background:#061018;
+    }
+
+    .footer-wrap{
+      border-top:1px solid rgba(255,255,255,.08);
+      padding-top:18px;
+      display:grid;
+      gap:8px;
+      color:#9db2c5;
+      font-size:12.5px;
+      text-align:center;
+    }
+
+    .bottom-bar{
+      position:fixed;
+      left:10px;
+      right:10px;
+      bottom:calc(10px + var(--safe-bottom));
+      z-index:1200;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+      padding:8px;
+      border-radius:20px;
+      background:rgba(7,16,25,.84);
+      border:1px solid rgba(255,255,255,.10);
+      backdrop-filter:blur(16px);
+      box-shadow:0 16px 40px rgba(0,0,0,.30);
+    }
+
+    .bottom-bar .btn{
+      min-height:48px;
+      padding:12px 10px;
+      font-size:12px;
+    }
+
+    @keyframes floatLogo{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-4px)}
+    }
+
+    @media(min-width:720px){
+      body{padding-bottom:0}
+      .container{width:min(1180px,calc(100% - 36px))}
+      .section{padding:78px 0}
+      .btn{width:auto}
+      .hero{min-height:calc(100vh - 72px);align-items:center}
+      .hero-inner{padding:88px 0}
+      .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}
+      .climate-logo-card{width:136px;height:136px}
+      .hero p{font-size:18px}
+      .hero-actions{display:flex;flex-wrap:wrap}
+      .featured-grid{grid-template-columns:.95fr 1.05fr;align-items:center;gap:26px}
+      .gallery-top{flex-direction:row;justify-content:space-between;align-items:flex-end}
+      .gallery-slider{grid-auto-columns:calc((100% - 28px)/3)}
+      .quote-grid{grid-template-columns:1.05fr .95fr}
+      .bottom-bar{display:none}
+      .footer-wrap{text-align:left}
+    }
+
+    @media(min-width:1020px){
+      .nav{min-height:82px}
+      .mobile-toggle{display:none}
+      .menu{
+        position:static;
+        display:flex;
+        flex-direction:row;
+        gap:22px;
+        padding:0;
+        background:transparent;
+        border:none;
+        box-shadow:none;
+      }
+
+      .menu a{
+        padding:0;
+        background:transparent;
+        font-size:14px;
+      }
+
+      .brand-logo-wrap{
+        width:60px;
+        height:60px;
+        flex-basis:60px;
+      }
+
+      .brand-text strong{
+        font-size:20px;
+        max-width:none;
+      }
+
+      .brand-text small{
+        max-width:none;
+      }
+
+      .gallery-slider{
+        grid-auto-columns:calc((100% - 42px)/4);
+      }
+    }
+
+    @media(min-width:1240px){
+      .gallery-slider{
+        grid-auto-columns:calc((100% - 56px)/5);
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <header class="header">
     <div class="container nav">
       <a href="#inicio" class="brand">
-        <div class="brand-logo"><img src="assets/logo.jpg" alt="Logo CM Clean"></div>
-        <div class="brand-text"><strong>CM Clean</strong><small>Especialista em Higienização</small></div>
+        <div class="brand-logo-wrap">
+          <img src="assets/logo.jpg" alt="Logo PS Ar Condicionado Sorocaba" class="brand-logo">
+        </div>
+
+        <div class="brand-text">
+          <strong>PS Ar Sorocaba</strong>
+          <small>Instalação • Limpeza • Manutenção</small>
+        </div>
       </a>
 
-      <div class="menu-wrap">
-        <nav class="menu" id="menu">
-          <a href="#inicio">Início</a>
-          <a href="#galeria">Trabalhos</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#contato">Contato</a>
-        </nav>
-        <div class="header-cta">
-          <button class="btn btn-blue" onclick="abrirWhatsApp('Botão topo','Olá, quero solicitar um orçamento para higienização.')">Orçamento</button>
-          <button class="btn btn-wa" onclick="abrirWhatsApp('Botão topo','Olá, quero falar com a CM Clean.')">WhatsApp</button>
-        </div>
-        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
-      </div>
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#destaque">Destaque</a>
+        <a href="#galeria">Fotos</a>
+        <a href="#orcamento">Orçamento</a>
+      </nav>
+
+      <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
     </div>
   </header>
 
   <main id="inicio">
+
     <section class="hero">
-      <div class="container">
-        <div class="hero-layout">
+      <div class="hero-bg-image" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-grid">
           <div class="hero-content">
-            <div class="hero-badge">Atendimento a domicílio</div>
-            <h1 class="hero-title">Higienização de<span class="line-2">sofás e colchões</span></h1>
-            <p class="hero-sub">A <span>CM Clean</span> é especialista em higienização, limpeza e proteção de estofados, sofás e colchões, ajudando a combater <span>fungos, bactérias e mau cheiro</span> com atendimento profissional e caprichado.</p>
-            <div class="hero-actions">
-              <button class="btn btn-blue" onclick="abrirWhatsApp('Hero orçamento','Olá, quero solicitar um orçamento para higienização de sofá ou colchão.')">Solicitar orçamento</button>
-              <a class="btn btn-outline" href="#galeria">Ver trabalhos</a>
-              <button class="btn btn-wa" onclick="abrirWhatsApp('Hero WhatsApp','Olá, quero agendar uma higienização.')">Agendar pelo WhatsApp</button>
+
+            <div class="climate-logo-card">
+              <div class="climate-logo-inner">
+                <img src="assets/logo.jpg" alt="Logo PS Ar Condicionado Sorocaba">
+              </div>
+
+              <div class="split-labels">
+                <span class="hot-label">Quente</span>
+                <span class="cold-label">Frio</span>
+              </div>
             </div>
-            <div class="hero-info"><span><b>São Paulo e Grande ABC</b></span><span>•</span><span>Sofás • Colchões • Higienização</span></div>
+
+            <span class="tag">Ar condicionado em Sorocaba</span>
+
+            <h1>PS Ar <span>Condicionado</span></h1>
+
+            <p>
+              Instalação, limpeza, manutenção e infraestrutura. Atendimento objetivo para deixar seu ambiente no clima certo.
+            </p>
+
+            <div class="hero-pills">
+              <span class="pill">Instalação</span>
+              <span class="pill">Limpeza</span>
+              <span class="pill">Manutenção</span>
+              <span class="pill">Infraestrutura</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Hero', 'Quero solicitar um orçamento para ar condicionado.')">
+                Chamar no WhatsApp
+              </a>
+
+              <a class="btn btn-cold" href="#orcamento">
+                Pedir orçamento
+              </a>
+            </div>
           </div>
 
-          <div class="hero-video-card">
-            <video autoplay muted loop playsinline>
-              <source src="assets/hero.mp4" type="video/mp4">
+          <div class="fast-card">
+            <div class="fast-line">❄️ <span><b>Instalação</b> de ar condicionado</span></div>
+            <div class="fast-line">🧼 <span><b>Limpeza</b> e manutenção em geral</span></div>
+            <div class="fast-line">🛠️ <span><b>Infraestrutura</b> para instalação</span></div>
+            <div class="fast-line">📲 <span>Orçamento rápido pelo WhatsApp</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="destaque">
+      <div class="container">
+        <div class="section-head center">
+          <span class="tag">Vídeo em destaque</span>
+
+          <h2 class="section-title">
+            Serviço limpo, <span>rápido e seguro</span>
+          </h2>
+
+          <p class="section-sub">
+            Veja um vídeo de apresentação e peça seu orçamento direto pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <div class="featured-video-card">
+            <video controls playsinline preload="metadata">
+              <source src="assets/destaque.mp4" type="video/mp4">
             </video>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section gallery-section" id="galeria">
-      <div class="container">
-        <div class="gallery-head">
-          <div class="gallery-text">
-            <span class="tag">Antes e depois</span>
-            <h2>Nossos <span class="gradient">trabalhos</span></h2>
-            <p>Veja alguns resultados de higienizações feitas pela CM Clean. As imagens passam automaticamente para o lado e você também pode controlar pelas setas.</p>
+          <div class="featured-content">
+            <h3>Ambiente no clima certo, <span>sem complicação</span></h3>
+
+            <p>
+              Serviços para casas, apartamentos e comércios, com foco em praticidade, acabamento e atendimento direto.
+            </p>
+
+            <ul class="check-list">
+              <li>Instalação de ar condicionado</li>
+              <li>Limpeza e manutenção preventiva</li>
+              <li>Infraestrutura para novos pontos</li>
+              <li>Orçamento rápido e sem enrolação</li>
+            </ul>
+
+            <div class="hero-actions">
+              <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Vídeo destaque', 'Vi o vídeo em destaque e quero um orçamento.')">
+                Solicitar agora
+              </a>
+
+              <a class="btn btn-dark" href="#galeria">
+                Ver fotos
+              </a>
+            </div>
           </div>
-          <div class="slider-controls"><button class="slider-btn" onclick="moveSlider(-1)">‹</button><button class="slider-btn" onclick="moveSlider(1)">›</button></div>
-        </div>
-
-        <div class="work-slider" id="workSlider">
-          <article class="work-card"><img src="assets/foto-1.jpg" alt="Trabalho 1"><div class="work-caption"><strong>Antes e Depois</strong><span>Resultado visível com limpeza profissional.</span></div></article>
-          <article class="work-card"><img src="assets/foto-2.jpg" alt="Trabalho 2"><div class="work-caption"><strong>Higienização</strong><span>Remoção de sujeiras e revitalização do tecido.</span></div></article>
-          <article class="work-card"><img src="assets/foto-3.jpg" alt="Trabalho 3"><div class="work-caption"><strong>Sofás</strong><span>Mais conforto, aparência renovada e limpeza.</span></div></article>
-          <article class="work-card"><img src="assets/foto-4.jpg" alt="Trabalho 4"><div class="work-caption"><strong>Atendimento</strong><span>Serviço feito com atenção e cuidado.</span></div></article>
-          <article class="work-card"><img src="assets/foto-5.jpg" alt="Trabalho 5"><div class="work-caption"><strong>Proteção</strong><span>Ajuda contra ácaros, bactérias e mau cheiro.</span></div></article>
-          <article class="work-card"><img src="assets/foto-6.jpg" alt="Trabalho 6"><div class="work-caption"><strong>Colchões</strong><span>Mais saúde e limpeza para o dia a dia.</span></div></article>
-          <article class="work-card"><img src="assets/foto-7.jpg" alt="Trabalho 7"><div class="work-caption"><strong>Acabamento</strong><span>Limpeza profunda e resultado profissional.</span></div></article>
-          <article class="work-card"><img src="assets/foto-8.jpg" alt="Trabalho 8"><div class="work-caption"><strong>CM Clean</strong><span>Qualidade e confiança no atendimento.</span></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="servicos">
+    <section class="section" id="galeria">
       <div class="container">
-        <div class="section-top">
-          <span class="tag">Serviços</span>
-          <h2 class="section-title">O que a <span>CM Clean</span> faz</h2>
-          <p class="section-sub">Soluções pensadas para melhorar o conforto, a limpeza e a aparência dos seus estofados e colchões.</p>
-        </div>
-        <div class="grid-3">
-          <div class="card"><div class="icon">🛋️</div><h3>Higienização de Sofás</h3><p>Limpeza profunda para remover sujeiras, odores, ácaros e microrganismos, devolvendo beleza e conforto ao sofá.</p><button class="btn btn-outline" onclick="abrirWhatsApp('Serviço - Sofá','Olá, tenho interesse em higienização de sofá.')">Quero esse serviço</button></div>
-          <div class="card"><div class="icon">🛏️</div><h3>Higienização de Colchões</h3><p>Cuidado especial para deixar o colchão mais limpo, saudável e agradável para o uso no dia a dia.</p><button class="btn btn-outline" onclick="abrirWhatsApp('Serviço - Colchão','Olá, tenho interesse em higienização de colchão.')">Quero esse serviço</button></div>
-          <div class="card"><div class="icon">🧼</div><h3>Proteção e Cuidado</h3><p>Tratamentos que ajudam a combater fungos, bactérias e mau cheiro, trazendo mais segurança para sua família.</p><button class="btn btn-outline" onclick="abrirWhatsApp('Serviço - Proteção','Olá, quero saber mais sobre proteção contra fungos, bactérias e mau cheiro.')">Quero esse serviço</button></div>
-        </div>
-      </div>
-    </section>
+        <div class="gallery-top">
+          <div class="section-head" style="margin-bottom:0;">
+            <span class="tag">Fotos</span>
 
-    <section class="section" id="sobre">
-      <div class="container grid-2">
-        <div class="card">
-          <span class="tag">Sobre a empresa</span>
-          <h3 style="margin-top:12px;">Limpeza que você sente</h3>
-          <p>A CM Clean trabalha com foco em higienização de sofás e colchões, oferecendo atendimento a domicílio e serviço caprichado para renovar seus estofados.</p>
-          <ul class="list"><li>Atendimento a domicílio</li><li>Limpeza profunda e profissional</li><li>Ajuda contra fungos, bactérias e odores</li><li>Mais beleza e conforto para o ambiente</li><li>Atendimento em São Paulo e Grande ABC</li></ul>
-          <button class="btn btn-blue" onclick="abrirWhatsApp('Sobre a empresa','Olá, quero conhecer melhor os serviços da CM Clean.')">Falar com a equipe</button>
-        </div>
-        <div class="card">
-          <span class="tag">Diferenciais</span>
-          <h3 style="margin-top:12px;">Por que escolher a CM Clean</h3>
-          <p>O objetivo é entregar um serviço de confiança, com ótimo atendimento e resultado que realmente faz diferença no sofá ou colchão.</p>
-          <ul class="list"><li>Atendimento rápido pelo WhatsApp</li><li>Visual renovado no estofado</li><li>Mais saúde para sua casa</li><li>Profissionalismo e cuidado</li><li>Resultado antes e depois</li></ul>
-          <button class="btn btn-outline" onclick="abrirWhatsApp('Diferenciais','Olá, quero solicitar um orçamento com a CM Clean.')">Pedir orçamento</button>
-        </div>
-      </div>
-    </section>
+            <h2 class="section-title">
+              Trabalhos <span>realizados</span>
+            </h2>
 
-    <section class="section" id="contato">
-      <div class="container contact-grid">
-        <div class="map-card">
-          <div class="map-info"><span class="tag">Atendimento</span><h3>Região de <span class="gradient">atendimento</span></h3><p>Atendimento a domicílio em <strong>São Paulo e Grande ABC</strong>.<br>Agende pelo WhatsApp de forma rápida e prática.</p></div>
-          <iframe class="map-frame" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=S%C3%A3o%20Paulo%20Brasil&output=embed"></iframe>
-        </div>
-        <div class="form-card">
-          <div class="form-box">
-            <span class="tag">Contato rápido</span>
-            <h3>Peça seu <span class="gradient">orçamento</span></h3>
-            <p>Preencha os dados abaixo e o WhatsApp abrirá com uma mensagem pronta para a CM Clean.</p>
-            <form class="form-grid" onsubmit="enviarFormulario(event)">
-              <input type="text" name="nome" placeholder="Seu nome" required>
-              <input type="tel" name="telefone" placeholder="Seu WhatsApp" required>
-              <select name="servico" required><option value="">Tipo de serviço</option><option>Higienização de Sofá</option><option>Higienização de Colchão</option><option>Proteção contra fungos e bactérias</option><option>Outro serviço</option></select>
-              <input type="text" name="bairro" placeholder="Bairro / Cidade">
-              <textarea class="full" name="mensagem" placeholder="Descreva o que você precisa..."></textarea>
-              <button class="btn btn-wa full" type="submit">Enviar para WhatsApp</button>
-            </form>
+            <p class="section-sub">
+              As fotos passam automaticamente. No celular, arraste para o lado.
+            </p>
           </div>
+
+          <div class="slider-controls">
+            <button class="slider-btn" onclick="moveSlider(-1)" aria-label="Voltar">‹</button>
+            <button class="slider-btn" onclick="moveSlider(1)" aria-label="Avançar">›</button>
+          </div>
+        </div>
+
+        <div class="gallery-slider" id="gallerySlider">
+          <article class="gallery-card">
+            <img src="assets/foto-1.webp" alt="Trabalho 1">
+            <div class="caption">Instalação com acabamento limpo.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-2.webp" alt="Trabalho 2">
+            <div class="caption">Manutenção e limpeza profissional.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-3.webp" alt="Trabalho 3">
+            <div class="caption">Infraestrutura organizada para instalação.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-4.webp" alt="Trabalho 4">
+            <div class="caption">Atendimento para ambientes residenciais.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-5.webp" alt="Trabalho 5">
+            <div class="caption">Serviço técnico com cuidado nos detalhes.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-6.webp" alt="Trabalho 6">
+            <div class="caption">Resultado final limpo e funcional.</div>
+          </article>
+        </div>
+
+        <div class="swipe-note">↔ Arraste para ver mais fotos</div>
+      </div>
+    </section>
+
+    <section class="section" id="orcamento">
+      <div class="container quote-grid">
+        <div class="quote-card">
+          <span class="tag">Orçamento</span>
+
+          <h3>Peça seu <span>orçamento</span></h3>
+
+          <p>
+            Preencha e envie direto para o WhatsApp com o serviço que você precisa.
+          </p>
+
+          <form class="form-grid" id="quoteForm">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" placeholder="Seu WhatsApp" required>
+            </div>
+
+            <div class="field">
+              <label for="servico">Serviço</label>
+              <select id="servico" required>
+                <option value="">Selecione</option>
+                <option>Instalação de ar condicionado</option>
+                <option>Limpeza de ar condicionado</option>
+                <option>Manutenção</option>
+                <option>Infraestrutura</option>
+                <option>Outro serviço</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Detalhes</label>
+              <textarea id="mensagem" placeholder="Explique rapidamente o que você precisa"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-cold">
+              Enviar orçamento
+            </button>
+          </form>
+        </div>
+
+        <div class="info-card">
+          <span class="tag">Contato rápido</span>
+
+          <h3>Fale direto com a <span>PS Ar</span></h3>
+
+          <p>
+            Atendimento em Sorocaba para instalação, limpeza, manutenção e infraestrutura.
+          </p>
+
+          <ul class="contact-list">
+            <li>WhatsApp: (15) 98151-2795</li>
+            <li>Produto/serviço: Ar condicionado</li>
+            <li>Sorocaba e região</li>
+            <li>Orçamento pelo WhatsApp</li>
+          </ul>
+
+          <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Contato rápido', 'Olá, quero falar sobre um orçamento.')">
+            Chamar no WhatsApp
+          </a>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-box"><h4>CM Clean</h4><p>Especialista em higienização de sofás e colchões, com atendimento a domicílio e foco em limpeza, proteção e conforto.</p></div>
-          <div class="footer-box"><h4>Menu</h4><ul><li><a href="#inicio">Início</a></li><li><a href="#galeria">Trabalhos</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></div>
-          <div class="footer-box"><h4>Contato</h4><ul><li>WhatsApp: (11) 96526-1637</li><li>Atendimento: São Paulo e Grande ABC</li><li>Especialista em higienização</li><li>Proteção contra fungos, bactérias e mau cheiro</li></ul></div>
-        </div>
-        <div class="footer-bottom"><p>© 2026 CM Clean - Todos os direitos reservados</p><p>Site criado para apresentação e captação de clientes</p></div>
+      <div class="container footer-wrap">
+        <p>© 2026 PS Ar Condicionado Sorocaba</p>
+        <p>Site criado para apresentação e captação de clientes.</p>
       </div>
     </footer>
   </main>
 
-  <a class="wa-float" href="#" onclick="abrirWhatsApp('Botão flutuante','Olá, quero solicitar um orçamento com a CM Clean.')" aria-label="WhatsApp">
-    <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3.2A12.68 12.68 0 0 0 5.09 22.3L3.2 28.8l6.68-1.76a12.62 12.62 0 0 0 6.12 1.56h.01A12.7 12.7 0 0 0 16.02 3.2Zm7.47 17.94c-.31.88-1.56 1.62-2.22 1.73-.57.09-1.3.13-2.1-.13-.48-.15-1.1-.35-1.89-.69-3.33-1.44-5.5-4.8-5.67-5.02-.17-.22-1.35-1.8-1.35-3.43 0-1.63.86-2.44 1.16-2.77.3-.33.66-.41.88-.41h.63c.2.01.48-.08.75.57.29.7.98 2.4 1.07 2.57.09.17.15.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.71.2.35.88 1.45 1.89 2.35 1.3 1.16 2.39 1.52 2.74 1.69.35.17.55.14.75-.09.2-.23.86-1 1.09-1.35.23-.35.46-.29.78-.17.32.12 2.03.96 2.38 1.13.35.17.58.26.67.4.09.14.09.81-.22 1.69Z"/></svg>
-  </a>
+  <div class="bottom-bar">
+    <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Barra fixa mobile', 'Quero solicitar um orçamento.')">
+      WhatsApp
+    </a>
+
+    <a class="btn btn-cold" href="#orcamento">
+      Orçamento
+    </a>
+  </div>
 
   <script>
-    const WHATSAPP = "5511965261637";
+    const WHATSAPP_NUMBER = "5515981512795";
 
-    function toggleMenu(){document.getElementById("menu").classList.toggle("open")}
-    document.querySelectorAll(".menu a").forEach(link=>{link.addEventListener("click",()=>{document.getElementById("menu").classList.remove("open")})});
-
-    function abrirWhatsApp(botao,interesse){
-      const texto=`Olá, vim pelo site da CM Clean.\n\nBotão clicado: ${botao}\nInteresse: ${interesse}`;
-      window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`,"_blank");
+    function toggleMenu(){
+      document.getElementById("menu").classList.toggle("open");
     }
 
-    function enviarFormulario(event){
-      event.preventDefault();
-      const form=event.target;
-      const nome=form.nome.value.trim();
-      const telefone=form.telefone.value.trim();
-      const servico=form.servico.value.trim();
-      const bairro=form.bairro.value.trim();
-      const mensagem=form.mensagem.value.trim();
-      const texto=`Olá, vim pelo site da CM Clean e quero um orçamento.\n\nNome: ${nome}\nWhatsApp: ${telefone}\nServiço: ${servico}\nBairro/Cidade: ${bairro}\nMensagem: ${mensagem}`;
-      window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`,"_blank");
+    document.querySelectorAll(".menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("menu").classList.remove("open");
+      });
+    });
+
+    function sendPresetMessage(origem, interesse){
+      const text = `Olá, vim pelo site da PS Ar Condicionado Sorocaba.\n\nOrigem: ${origem}\nInteresse: ${interesse}`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
     }
 
-    const slider=document.getElementById("workSlider");
+    const form = document.getElementById("quoteForm");
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+      const servico = document.getElementById("servico").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      const text = `Olá, vim pelo site da PS Ar Condicionado Sorocaba e quero um orçamento.\n\nNome: ${nome}\nTelefone: ${telefone}\nServiço: ${servico}\nDetalhes: ${mensagem || "Não informado"}`;
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
+    });
+
+    const slider = document.getElementById("gallerySlider");
     let autoSlide;
-    function moveSlider(direction){const amount=Math.min(slider.clientWidth*.85,420);slider.scrollBy({left:amount*direction,behavior:"smooth"})}
-    function startAutoSlide(){stopAutoSlide();autoSlide=setInterval(()=>{slider.scrollLeft+=2.2;if(slider.scrollLeft+slider.clientWidth>=slider.scrollWidth-3){slider.scrollLeft=0}},16)}
-    function stopAutoSlide(){clearInterval(autoSlide)}
-    startAutoSlide();
-    slider.addEventListener("mouseenter",stopAutoSlide);
-    slider.addEventListener("mouseleave",startAutoSlide);
-    slider.addEventListener("touchstart",stopAutoSlide,{passive:true});
-    slider.addEventListener("touchend",startAutoSlide);
+
+    function moveSlider(direction){
+      const amount = Math.min(slider.clientWidth * 0.85, 420);
+      slider.scrollBy({
+        left: amount * direction,
+        behavior: "smooth"
+      });
+    }
+
+    function startAutoSlide(){
+      stopAutoSlide();
+
+      autoSlide = setInterval(() => {
+        if(!slider) return;
+
+        slider.scrollLeft += 1.2;
+
+        if(slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 2){
+          slider.scrollLeft = 0;
+        }
+      }, 18);
+    }
+
+    function stopAutoSlide(){
+      clearInterval(autoSlide);
+    }
+
+    if(slider){
+      startAutoSlide();
+
+      slider.addEventListener("mouseenter", stopAutoSlide);
+      slider.addEventListener("mouseleave", startAutoSlide);
+      slider.addEventListener("touchstart", stopAutoSlide, { passive:true });
+      slider.addEventListener("touchend", startAutoSlide);
+    }
   </script>
 </body>
 </html>
