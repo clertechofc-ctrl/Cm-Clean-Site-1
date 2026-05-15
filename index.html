@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>PS Ar Condicionado Sorocaba | Instalação e Manutenção</title>
-  <meta name="description" content="PS Ar Condicionado Sorocaba: instalação, limpeza, manutenção e infraestrutura. Orçamento rápido pelo WhatsApp." />
+  <title>Claudio Vidros | Vidraçaria em Ribeirão Preto</title>
+  <meta name="description" content="Soluções em vidros e espelhos. Box, guarda-corpo, espelhos, coberturas, esquadrias e mais. Claudio Vidros em Ribeirão Preto." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +13,21 @@
 
   <style>
     :root{
-      --bg:#071019;
-      --bg2:#0b1521;
-      --text:#f6fbff;
-      --muted:#b7c8d9;
-      --blue:#30b7ff;
-      --blue2:#0d72c8;
-      --red:#ff4d4d;
-      --orange:#ff9a3c;
+      --bg:#070d1f;
+      --bg-2:#0b1430;
+      --card:rgba(255,255,255,.07);
+      --card-2:rgba(255,255,255,.10);
+      --line:rgba(255,255,255,.10);
+      --text:#f4f8ff;
+      --muted:#b8c5df;
+      --blue:#3f6cff;
+      --blue-2:#1dc4ff;
+      --yellow:#ffd43b;
+      --yellow-2:#ffef9a;
       --wa:#25d366;
-      --wa2:#128c3d;
-      --shadow:0 22px 60px rgba(0,0,0,.36);
+      --wa-2:#128c3d;
+      --shadow:0 22px 60px rgba(0,0,0,.35);
+      --radius:24px;
       --safe-bottom:env(safe-area-inset-bottom,0px);
     }
 
@@ -41,66 +45,63 @@
       font-family:"Inter",sans-serif;
       color:var(--text);
       background:
-        radial-gradient(circle at 0% 0%,rgba(48,183,255,.20),transparent 30%),
-        radial-gradient(circle at 100% 0%,rgba(255,77,77,.16),transparent 28%),
-        linear-gradient(180deg,#06101a 0%,#0b1521 48%,#071019 100%);
+        radial-gradient(circle at 0% 0%, rgba(63,108,255,.15), transparent 32%),
+        radial-gradient(circle at 100% 0%, rgba(29,196,255,.14), transparent 28%),
+        radial-gradient(circle at 50% 100%, rgba(255,212,59,.08), transparent 26%),
+        linear-gradient(180deg, #060b19 0%, #0b132c 52%, #070d1f 100%);
       overflow-x:hidden;
       padding-bottom:92px;
     }
 
     a{
-      text-decoration:none;
       color:inherit;
+      text-decoration:none;
     }
 
-    img,
-    video{
+    img, video{
       display:block;
       max-width:100%;
     }
 
-    button,
-    input,
-    select,
-    textarea{
+    button, input, textarea, select{
       font-family:inherit;
     }
 
     .container{
-      width:min(1120px,calc(100% - 24px));
+      width:min(1160px, calc(100% - 24px));
       margin:0 auto;
     }
 
     .section{
-      padding:54px 0;
+      padding:56px 0;
     }
 
     .tag{
       display:inline-flex;
       align-items:center;
       gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      color:#e8f1ff;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      backdrop-filter:blur(12px);
       width:max-content;
       max-width:100%;
-      padding:9px 13px;
-      border-radius:999px;
-      background:rgba(48,183,255,.12);
-      border:1px solid rgba(48,183,255,.22);
-      color:#dff7ff;
-      font-size:10.5px;
-      font-weight:900;
-      letter-spacing:.11em;
-      text-transform:uppercase;
-      backdrop-filter:blur(10px);
     }
 
     .tag::before{
       content:"";
-      width:8px;
-      height:8px;
+      width:9px;
+      height:9px;
       border-radius:50%;
-      background:linear-gradient(135deg,var(--red),var(--blue));
-      box-shadow:0 0 0 6px rgba(48,183,255,.11);
-      flex:0 0 8px;
+      background:linear-gradient(135deg,var(--yellow),var(--blue-2));
+      box-shadow:0 0 0 6px rgba(255,212,59,.09);
+      flex:0 0 9px;
     }
 
     .section-head{
@@ -110,20 +111,20 @@
     }
 
     .section-head.center{
-      text-align:center;
       justify-items:center;
+      text-align:center;
     }
 
     .section-title{
-      font-size:clamp(28px,8vw,48px);
-      line-height:1.06;
+      font-size:clamp(28px,8vw,52px);
+      line-height:1.05;
       letter-spacing:-.05em;
       font-weight:950;
       color:#fff;
     }
 
     .section-title span{
-      background:linear-gradient(135deg,var(--red),var(--orange),var(--blue));
+      background:linear-gradient(135deg,var(--yellow),var(--blue-2));
       -webkit-background-clip:text;
       background-clip:text;
       color:transparent;
@@ -132,8 +133,8 @@
     .section-sub{
       color:var(--muted);
       font-size:14.5px;
-      line-height:1.7;
-      max-width:760px;
+      line-height:1.75;
+      max-width:720px;
     }
 
     .btn{
@@ -152,8 +153,8 @@
       font-size:13px;
       font-weight:900;
       text-transform:uppercase;
-      letter-spacing:.035em;
-      transition:.22s ease;
+      letter-spacing:.04em;
+      transition:.25s ease;
       -webkit-tap-highlight-color:transparent;
     }
 
@@ -169,45 +170,51 @@
       content:"";
       position:absolute;
       inset:0;
-      background:linear-gradient(120deg,transparent,rgba(255,255,255,.30),transparent);
+      background:linear-gradient(120deg, transparent, rgba(255,255,255,.28), transparent);
       transform:translateX(-130%);
-      transition:.65s ease;
+      transition:.7s ease;
     }
 
     .btn:hover::before{
       transform:translateX(130%);
     }
 
-    .btn-cold{
-      background:linear-gradient(135deg,var(--blue),var(--blue2));
+    .btn-primary{
+      background:linear-gradient(135deg,var(--yellow),#f7c500);
+      color:#111827;
+      box-shadow:0 16px 34px rgba(255,212,59,.22);
+    }
+
+    .btn-secondary{
+      background:linear-gradient(135deg,var(--blue),var(--blue-2));
       color:#fff;
-      box-shadow:0 15px 30px rgba(48,183,255,.24);
+      box-shadow:0 16px 34px rgba(63,108,255,.24);
     }
 
     .btn-wa{
-      background:linear-gradient(135deg,var(--wa),var(--wa2));
+      background:linear-gradient(135deg,var(--wa),var(--wa-2));
       color:#fff;
-      box-shadow:0 15px 30px rgba(37,211,102,.26);
+      box-shadow:0 16px 34px rgba(37,211,102,.22);
     }
 
     .btn-dark{
       background:rgba(255,255,255,.08);
       color:#fff;
-      border:1px solid rgba(255,255,255,.13);
-      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter:blur(10px);
     }
 
     .header{
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(7,16,25,.82);
+      background:rgba(7,13,31,.82);
       border-bottom:1px solid rgba(255,255,255,.08);
-      backdrop-filter:blur(16px);
+      backdrop-filter:blur(18px);
     }
 
     .nav{
-      min-height:72px;
+      min-height:74px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -217,18 +224,18 @@
     .brand{
       display:flex;
       align-items:center;
-      gap:10px;
+      gap:12px;
       min-width:0;
     }
 
     .brand-logo-wrap{
-      width:54px;
-      height:54px;
+      width:56px;
+      height:56px;
+      flex:0 0 56px;
       border-radius:50%;
       padding:2px;
-      background:conic-gradient(from 180deg,var(--red),var(--orange),var(--blue),var(--red));
-      box-shadow:0 12px 28px rgba(0,0,0,.25);
-      flex:0 0 54px;
+      background:conic-gradient(from 180deg, var(--yellow), var(--blue), var(--blue-2), var(--yellow));
+      box-shadow:0 12px 28px rgba(0,0,0,.24);
       animation:floatLogo 3.3s ease-in-out infinite;
     }
 
@@ -237,8 +244,8 @@
       height:100%;
       object-fit:cover;
       border-radius:50%;
-      background:#fff;
-      border:2px solid rgba(255,255,255,.35);
+      border:2px solid rgba(255,255,255,.32);
+      background:#0d1736;
     }
 
     .brand-text{
@@ -255,19 +262,19 @@
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      max-width:190px;
+      max-width:180px;
     }
 
     .brand-text small{
-      font-size:9.5px;
-      color:var(--muted);
+      font-size:9px;
       font-weight:900;
-      letter-spacing:.12em;
+      letter-spacing:.14em;
       text-transform:uppercase;
+      color:#b9c7e2;
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      max-width:190px;
+      max-width:180px;
     }
 
     .mobile-toggle{
@@ -284,15 +291,15 @@
 
     .menu{
       position:absolute;
-      top:72px;
+      top:74px;
       left:12px;
       right:12px;
       display:none;
       flex-direction:column;
       gap:6px;
       padding:12px;
-      border-radius:18px;
-      background:#0b1521;
+      border-radius:20px;
+      background:#0c1430;
       border:1px solid rgba(255,255,255,.10);
       box-shadow:var(--shadow);
     }
@@ -304,40 +311,38 @@
     .menu a{
       padding:13px 14px;
       border-radius:14px;
-      background:rgba(255,255,255,.055);
-      color:#fff;
+      background:rgba(255,255,255,.05);
       font-size:14px;
       font-weight:850;
     }
 
     .hero{
       position:relative;
-      min-height:calc(100svh - 72px);
+      min-height:calc(100svh - 74px);
       display:flex;
       align-items:flex-end;
       overflow:hidden;
-      background:#061018;
+      background:#081126;
     }
 
-    .hero-bg-image{
+    .hero-bg{
       position:absolute;
       inset:0;
-      z-index:0;
-      overflow:hidden;
       background-image:url("assets/hero.jpg");
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
-      transform:scale(1.02);
+      transform:scale(1.03);
+      z-index:0;
     }
 
-    .hero-bg-image::after{
+    .hero-bg::after{
       content:"";
       position:absolute;
       inset:0;
       background:
-        linear-gradient(180deg,rgba(7,16,25,.34),rgba(7,16,25,.82) 55%,rgba(7,16,25,.99)),
-        linear-gradient(90deg,rgba(7,16,25,.92),rgba(7,16,25,.36),rgba(7,16,25,.86));
+        linear-gradient(180deg, rgba(8,17,38,.18), rgba(8,17,38,.84) 58%, rgba(8,17,38,.98)),
+        linear-gradient(90deg, rgba(8,17,38,.96), rgba(8,17,38,.45), rgba(8,17,38,.88));
     }
 
     .hero::before{
@@ -346,19 +351,18 @@
       inset:0;
       z-index:1;
       background:
-        linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
       background-size:38px 38px;
-      opacity:.22;
-      mask-image:linear-gradient(to bottom,black,transparent 92%);
-      pointer-events:none;
+      opacity:.25;
+      mask-image:linear-gradient(to bottom, black, transparent 90%);
     }
 
     .hero-inner{
       position:relative;
       z-index:2;
       width:100%;
-      padding:34px 0 28px;
+      padding:36px 0 28px;
     }
 
     .hero-grid{
@@ -369,112 +373,69 @@
     .hero-content{
       display:grid;
       gap:16px;
-      max-width:710px;
+      max-width:700px;
     }
 
-    .climate-logo-card{
-      width:112px;
-      height:112px;
-      border-radius:32px;
-      position:relative;
-      overflow:hidden;
-      background:linear-gradient(135deg,rgba(255,77,77,.95) 0%,rgba(255,154,60,.88) 42%,rgba(48,183,255,.92) 58%,rgba(13,114,200,.98) 100%);
-      box-shadow:0 18px 45px rgba(0,0,0,.34);
+    .hero-logo-card{
+      width:118px;
+      height:118px;
+      border-radius:30px;
       padding:3px;
+      background:linear-gradient(135deg, var(--yellow), var(--blue), var(--blue-2));
+      box-shadow:0 18px 46px rgba(0,0,0,.34);
+      overflow:hidden;
+      position:relative;
     }
 
-    .climate-logo-card::before{
+    .hero-logo-card::before{
       content:"";
       position:absolute;
       inset:3px;
-      border-radius:29px;
-      background:rgba(255,255,255,.95);
+      border-radius:27px;
+      background:rgba(11,20,48,.92);
       z-index:0;
     }
 
-    .climate-logo-card::after{
-      content:"";
-      position:absolute;
-      top:3px;
-      bottom:3px;
-      left:50%;
-      width:2px;
-      background:linear-gradient(180deg,var(--red),var(--blue));
-      z-index:1;
-      opacity:.55;
-    }
-
-    .climate-logo-inner{
+    .hero-logo-inner{
       position:relative;
-      z-index:2;
+      z-index:1;
       width:100%;
       height:100%;
-      border-radius:29px;
+      border-radius:27px;
       display:grid;
       place-items:center;
       overflow:hidden;
-      background:rgba(255,255,255,.82);
     }
 
-    .climate-logo-inner img{
+    .hero-logo-inner img{
       width:94%;
       height:94%;
-      object-fit:contain;
+      object-fit:cover;
       border-radius:24px;
     }
 
-    .split-labels{
-      position:absolute;
-      left:7px;
-      right:7px;
-      bottom:7px;
-      z-index:3;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:4px;
-    }
-
-    .split-labels span{
-      padding:4px 5px;
-      border-radius:999px;
-      font-size:8.5px;
-      font-weight:950;
-      text-align:center;
-      color:#fff;
-      letter-spacing:.06em;
-      text-transform:uppercase;
-    }
-
-    .hot-label{
-      background:linear-gradient(135deg,var(--red),var(--orange));
-    }
-
-    .cold-label{
-      background:linear-gradient(135deg,var(--blue),var(--blue2));
-    }
-
     .hero h1{
-      font-size:clamp(36px,12vw,76px);
+      font-size:clamp(38px,12vw,76px);
       line-height:.96;
       letter-spacing:-.055em;
       font-weight:950;
       color:#fff;
-      text-shadow:0 16px 46px rgba(0,0,0,.38);
+      text-shadow:0 18px 42px rgba(0,0,0,.38);
     }
 
     .hero h1 span{
       display:block;
-      background:linear-gradient(135deg,var(--red),var(--orange),var(--blue));
+      background:linear-gradient(135deg,var(--yellow),var(--blue-2));
       -webkit-background-clip:text;
       background-clip:text;
       color:transparent;
     }
 
     .hero p{
+      color:#e8f2ff;
       font-size:16px;
-      line-height:1.68;
-      color:#e9f3ff;
-      max-width:610px;
+      line-height:1.7;
+      max-width:600px;
     }
 
     .hero-pills{
@@ -482,7 +443,7 @@
       gap:8px;
       overflow-x:auto;
       scrollbar-width:none;
-      padding-bottom:3px;
+      padding-bottom:2px;
     }
 
     .hero-pills::-webkit-scrollbar{
@@ -495,7 +456,7 @@
       border-radius:999px;
       background:rgba(255,255,255,.10);
       border:1px solid rgba(255,255,255,.12);
-      color:#ecf7ff;
+      color:#ebf4ff;
       font-size:12px;
       font-weight:900;
       backdrop-filter:blur(10px);
@@ -504,38 +465,39 @@
     .hero-actions{
       display:grid;
       gap:10px;
-      margin-top:3px;
+      margin-top:4px;
     }
 
-    .fast-card{
+    .hero-card{
       display:grid;
       gap:10px;
-      padding:15px;
-      border-radius:22px;
-      background:rgba(255,255,255,.075);
-      border:1px solid rgba(255,255,255,.11);
-      backdrop-filter:blur(12px);
+      padding:16px;
+      border-radius:24px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter:blur(14px);
+      box-shadow:0 14px 34px rgba(0,0,0,.20);
     }
 
-    .fast-line{
+    .hero-line{
       display:flex;
-      gap:9px;
+      gap:10px;
       align-items:flex-start;
-      color:#dfedfb;
+      color:#ecf4ff;
       font-size:13.5px;
-      line-height:1.5;
-      font-weight:750;
+      line-height:1.6;
+      font-weight:760;
     }
 
-    .fast-line b{
+    .hero-line b{
       color:#fff;
     }
 
     .featured-section{
       background:
-        radial-gradient(circle at 85% 0%,rgba(255,77,77,.12),transparent 28%),
-        radial-gradient(circle at 0% 15%,rgba(48,183,255,.12),transparent 26%),
-        linear-gradient(180deg,#091420 0%,#0d1823 100%);
+        radial-gradient(circle at 10% 0%, rgba(29,196,255,.10), transparent 24%),
+        radial-gradient(circle at 100% 0%, rgba(255,212,59,.08), transparent 25%),
+        linear-gradient(180deg, #09112a 0%, #0d1732 100%);
       border-top:1px solid rgba(255,255,255,.06);
       border-bottom:1px solid rgba(255,255,255,.06);
     }
@@ -548,7 +510,7 @@
     .featured-video-card{
       position:relative;
       overflow:hidden;
-      border-radius:24px;
+      border-radius:26px;
       background:#000;
       border:1px solid rgba(255,255,255,.10);
       box-shadow:var(--shadow);
@@ -583,8 +545,8 @@
     .featured-content{
       display:grid;
       gap:14px;
-      padding:18px;
-      border-radius:24px;
+      padding:20px;
+      border-radius:26px;
       background:rgba(255,255,255,.065);
       border:1px solid rgba(255,255,255,.10);
       box-shadow:0 14px 34px rgba(0,0,0,.20);
@@ -599,18 +561,18 @@
     }
 
     .featured-content h3 span{
-      color:var(--blue);
+      color:var(--yellow);
     }
 
     .featured-content p{
       color:var(--muted);
       font-size:14.5px;
-      line-height:1.75;
+      line-height:1.76;
     }
 
     .check-list{
       display:grid;
-      gap:9px;
+      gap:10px;
     }
 
     .check-list li{
@@ -618,10 +580,10 @@
       display:flex;
       align-items:flex-start;
       gap:10px;
-      color:#eff7ff;
+      color:#eef5ff;
       font-size:14px;
       line-height:1.6;
-      font-weight:750;
+      font-weight:760;
     }
 
     .check-list li::before{
@@ -629,15 +591,42 @@
       width:21px;
       height:21px;
       flex:0 0 21px;
+      border-radius:50%;
       display:flex;
       align-items:center;
       justify-content:center;
-      border-radius:50%;
-      background:linear-gradient(135deg,var(--red),var(--blue));
-      color:#fff;
+      background:linear-gradient(135deg,var(--yellow),var(--blue-2));
+      color:#111827;
       font-size:12px;
       font-weight:900;
       margin-top:1px;
+    }
+
+    .services-grid{
+      display:grid;
+      gap:12px;
+    }
+
+    .service-card{
+      padding:18px;
+      border-radius:22px;
+      background:rgba(255,255,255,.065);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 14px 32px rgba(0,0,0,.18);
+      display:grid;
+      gap:8px;
+    }
+
+    .service-card strong{
+      font-size:16px;
+      font-weight:900;
+      color:#fff;
+    }
+
+    .service-card p{
+      color:var(--muted);
+      font-size:13.8px;
+      line-height:1.6;
     }
 
     .gallery-top{
@@ -674,7 +663,7 @@
       scroll-behavior:smooth;
       scroll-snap-type:x mandatory;
       scrollbar-width:none;
-      padding:3px 2px 12px;
+      padding:2px 2px 12px;
     }
 
     .gallery-slider::-webkit-scrollbar{
@@ -687,7 +676,7 @@
       border-radius:24px;
       background:rgba(255,255,255,.065);
       border:1px solid rgba(255,255,255,.10);
-      box-shadow:0 16px 42px rgba(0,0,0,.22);
+      box-shadow:0 16px 42px rgba(0,0,0,.20);
     }
 
     .gallery-card img{
@@ -708,7 +697,7 @@
       align-items:center;
       justify-content:center;
       gap:8px;
-      color:#abc0d2;
+      color:#a9bbd6;
       font-size:12px;
       font-weight:850;
       margin-top:4px;
@@ -725,7 +714,7 @@
       border-radius:24px;
       background:rgba(255,255,255,.065);
       border:1px solid rgba(255,255,255,.10);
-      box-shadow:0 16px 42px rgba(0,0,0,.22);
+      box-shadow:0 16px 42px rgba(0,0,0,.20);
       display:grid;
       gap:14px;
     }
@@ -733,7 +722,7 @@
     .quote-card h3,
     .info-card h3{
       font-size:24px;
-      line-height:1.1;
+      line-height:1.08;
       letter-spacing:-.03em;
       font-weight:950;
       color:#fff;
@@ -741,14 +730,14 @@
 
     .quote-card h3 span,
     .info-card h3 span{
-      color:var(--blue);
+      color:var(--yellow);
     }
 
     .quote-card p,
     .info-card p{
       color:var(--muted);
       font-size:14px;
-      line-height:1.7;
+      line-height:1.72;
     }
 
     .form-grid{
@@ -763,19 +752,19 @@
 
     .field label{
       font-size:12px;
+      font-weight:850;
       text-transform:uppercase;
       letter-spacing:.08em;
-      font-weight:850;
-      color:#d6e2ee;
+      color:#dbe6f5;
     }
 
     .field input,
     .field select,
     .field textarea{
       width:100%;
+      padding:15px 14px;
       border:none;
       outline:none;
-      padding:15px 14px;
       border-radius:16px;
       background:rgba(255,255,255,.08);
       color:#fff;
@@ -790,7 +779,7 @@
 
     .field input::placeholder,
     .field textarea::placeholder{
-      color:#90a6ba;
+      color:#8fa5bf;
     }
 
     .contact-list{
@@ -803,15 +792,15 @@
       display:flex;
       gap:9px;
       align-items:flex-start;
-      color:#edf5ff;
+      color:#eef5ff;
       font-size:14px;
       line-height:1.6;
-      font-weight:750;
+      font-weight:760;
     }
 
     .contact-list li::before{
       content:"•";
-      color:var(--blue);
+      color:var(--yellow);
       font-size:24px;
       line-height:1;
       margin-top:-2px;
@@ -819,7 +808,7 @@
 
     .footer{
       padding:38px 0 94px;
-      background:#061018;
+      background:#060b19;
     }
 
     .footer-wrap{
@@ -827,7 +816,7 @@
       padding-top:18px;
       display:grid;
       gap:8px;
-      color:#9db2c5;
+      color:#9eb0ca;
       font-size:12.5px;
       text-align:center;
     }
@@ -843,7 +832,7 @@
       gap:8px;
       padding:8px;
       border-radius:20px;
-      background:rgba(7,16,25,.84);
+      background:rgba(7,13,31,.85);
       border:1px solid rgba(255,255,255,.10);
       backdrop-filter:blur(16px);
       box-shadow:0 16px 40px rgba(0,0,0,.30);
@@ -862,16 +851,17 @@
 
     @media(min-width:720px){
       body{padding-bottom:0}
-      .container{width:min(1180px,calc(100% - 36px))}
-      .section{padding:78px 0}
+      .container{width:min(1180px, calc(100% - 36px))}
+      .section{padding:80px 0}
       .btn{width:auto}
-      .hero{min-height:calc(100vh - 72px);align-items:center}
-      .hero-inner{padding:88px 0}
-      .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}
-      .climate-logo-card{width:136px;height:136px}
+      .hero{min-height:calc(100vh - 74px);align-items:center}
+      .hero-inner{padding:86px 0}
+      .hero-grid{grid-template-columns:1.06fr .94fr;align-items:center}
+      .hero-logo-card{width:136px;height:136px}
       .hero p{font-size:18px}
       .hero-actions{display:flex;flex-wrap:wrap}
       .featured-grid{grid-template-columns:.95fr 1.05fr;align-items:center;gap:26px}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
       .gallery-top{flex-direction:row;justify-content:space-between;align-items:flex-end}
       .gallery-slider{grid-auto-columns:calc((100% - 28px)/3)}
       .quote-grid{grid-template-columns:1.05fr .95fr}
@@ -914,6 +904,10 @@
         max-width:none;
       }
 
+      .services-grid{
+        grid-template-columns:repeat(4,1fr);
+      }
+
       .gallery-slider{
         grid-auto-columns:calc((100% - 42px)/4);
       }
@@ -926,26 +920,26 @@
     }
   </style>
 </head>
-
 <body>
 
   <header class="header">
     <div class="container nav">
       <a href="#inicio" class="brand">
         <div class="brand-logo-wrap">
-          <img src="assets/logo.jpg" alt="Logo PS Ar Condicionado Sorocaba" class="brand-logo">
+          <img src="assets/logo.jpg" alt="Logo Claudio Vidros" class="brand-logo">
         </div>
 
         <div class="brand-text">
-          <strong>PS Ar Sorocaba</strong>
-          <small>Instalação • Limpeza • Manutenção</small>
+          <strong>Claudio Vidros</strong>
+          <small>Vidros • Espelhos • Box • Coberturas</small>
         </div>
       </a>
 
       <nav class="menu" id="menu">
         <a href="#inicio">Início</a>
         <a href="#destaque">Destaque</a>
-        <a href="#galeria">Fotos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
         <a href="#orcamento">Orçamento</a>
       </nav>
 
@@ -956,55 +950,52 @@
   <main id="inicio">
 
     <section class="hero">
-      <div class="hero-bg-image" aria-hidden="true"></div>
+      <div class="hero-bg" aria-hidden="true"></div>
 
       <div class="container hero-inner">
         <div class="hero-grid">
+
           <div class="hero-content">
-
-            <div class="climate-logo-card">
-              <div class="climate-logo-inner">
-                <img src="assets/logo.jpg" alt="Logo PS Ar Condicionado Sorocaba">
-              </div>
-
-              <div class="split-labels">
-                <span class="hot-label">Quente</span>
-                <span class="cold-label">Frio</span>
+            <div class="hero-logo-card">
+              <div class="hero-logo-inner">
+                <img src="assets/logo.jpg" alt="Logo Claudio Vidros">
               </div>
             </div>
 
-            <span class="tag">Ar condicionado em Sorocaba</span>
+            <span class="tag">Soluções em vidros e espelhos</span>
 
-            <h1>PS Ar <span>Condicionado</span></h1>
+            <h1>Claudio <span>Vidros</span></h1>
 
             <p>
-              Instalação, limpeza, manutenção e infraestrutura. Atendimento objetivo para deixar seu ambiente no clima certo.
+              Box, guarda-corpo, espelhos, coberturas, esquadrias e projetos sob medida com qualidade, segurança e acabamento moderno.
             </p>
 
             <div class="hero-pills">
-              <span class="pill">Instalação</span>
-              <span class="pill">Limpeza</span>
-              <span class="pill">Manutenção</span>
-              <span class="pill">Infraestrutura</span>
+              <span class="pill">Box</span>
+              <span class="pill">Espelhos</span>
+              <span class="pill">Guarda-corpo</span>
+              <span class="pill">Coberturas</span>
+              <span class="pill">Esquadrias</span>
             </div>
 
             <div class="hero-actions">
-              <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Hero', 'Quero solicitar um orçamento para ar condicionado.')">
+              <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Hero', 'Olá, quero solicitar um orçamento para vidros e espelhos.')">
                 Chamar no WhatsApp
               </a>
 
-              <a class="btn btn-cold" href="#orcamento">
+              <a class="btn btn-secondary" href="#orcamento">
                 Pedir orçamento
               </a>
             </div>
           </div>
 
-          <div class="fast-card">
-            <div class="fast-line">❄️ <span><b>Instalação</b> de ar condicionado</span></div>
-            <div class="fast-line">🧼 <span><b>Limpeza</b> e manutenção em geral</span></div>
-            <div class="fast-line">🛠️ <span><b>Infraestrutura</b> para instalação</span></div>
-            <div class="fast-line">📲 <span>Orçamento rápido pelo WhatsApp</span></div>
+          <div class="hero-card">
+            <div class="hero-line">💎 <span><b>Vidros e espelhos</b> com acabamento profissional</span></div>
+            <div class="hero-line">🛁 <span><b>Box e guarda-corpo</b> sob medida</span></div>
+            <div class="hero-line">🏠 <span><b>Coberturas e esquadrias</b> com design moderno</span></div>
+            <div class="hero-line">📍 <span>Atendimento em <b>Ribeirão Preto</b> e região</span></div>
           </div>
+
         </div>
       </div>
     </section>
@@ -1013,13 +1004,9 @@
       <div class="container">
         <div class="section-head center">
           <span class="tag">Vídeo em destaque</span>
-
-          <h2 class="section-title">
-            Serviço limpo, <span>rápido e seguro</span>
-          </h2>
-
+          <h2 class="section-title">Design, segurança e <span>elegância</span></h2>
           <p class="section-sub">
-            Veja um vídeo de apresentação e peça seu orçamento direto pelo WhatsApp.
+            Veja o vídeo em destaque e conheça um pouco mais do padrão visual e da qualidade dos serviços da Claudio Vidros.
           </p>
         </div>
 
@@ -1031,29 +1018,60 @@
           </div>
 
           <div class="featured-content">
-            <h3>Ambiente no clima certo, <span>sem complicação</span></h3>
+            <h3>Soluções em vidro para valorizar <span>cada ambiente</span></h3>
 
             <p>
-              Serviços para casas, apartamentos e comércios, com foco em praticidade, acabamento e atendimento direto.
+              Trabalhamos com projetos que unem funcionalidade, visual moderno e acabamento de alto padrão para residências e comércios.
             </p>
 
             <ul class="check-list">
-              <li>Instalação de ar condicionado</li>
-              <li>Limpeza e manutenção preventiva</li>
-              <li>Infraestrutura para novos pontos</li>
-              <li>Orçamento rápido e sem enrolação</li>
+              <li>Atendimento rápido e objetivo</li>
+              <li>Projetos sob medida</li>
+              <li>Vidros laminados e temperados</li>
+              <li>Instalação com segurança e ótimo acabamento</li>
             </ul>
 
             <div class="hero-actions">
-              <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Vídeo destaque', 'Vi o vídeo em destaque e quero um orçamento.')">
+              <a class="btn btn-primary" href="#galeria">Ver galeria</a>
+              <a class="btn btn-dark" href="#" onclick="sendPresetMessage('Vídeo destaque', 'Olá, vi o vídeo em destaque e quero um orçamento.')">
                 Solicitar agora
-              </a>
-
-              <a class="btn btn-dark" href="#galeria">
-                Ver fotos
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head center">
+          <span class="tag">Serviços</span>
+          <h2 class="section-title">O que a <span>Claudio Vidros</span> faz</h2>
+          <p class="section-sub">
+            Serviços essenciais e modernos para deixar seu espaço mais bonito, funcional e seguro.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <strong>Box para banheiro</strong>
+            <p>Modelos sob medida com acabamento limpo e visual elegante.</p>
+          </article>
+
+          <article class="service-card">
+            <strong>Espelhos</strong>
+            <p>Espelhos decorativos e funcionais para diversos ambientes.</p>
+          </article>
+
+          <article class="service-card">
+            <strong>Guarda-corpo</strong>
+            <p>Mais segurança com design leve e moderno em vidro.</p>
+          </article>
+
+          <article class="service-card">
+            <strong>Coberturas e esquadrias</strong>
+            <p>Soluções que unem proteção, durabilidade e estética.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -1062,14 +1080,10 @@
       <div class="container">
         <div class="gallery-top">
           <div class="section-head" style="margin-bottom:0;">
-            <span class="tag">Fotos</span>
-
-            <h2 class="section-title">
-              Trabalhos <span>realizados</span>
-            </h2>
-
+            <span class="tag">Galeria</span>
+            <h2 class="section-title">Trabalhos <span>realizados</span></h2>
             <p class="section-sub">
-              As fotos passam automaticamente. No celular, arraste para o lado.
+              As imagens passam automaticamente. No celular, também dá para arrastar para o lado.
             </p>
           </div>
 
@@ -1081,37 +1095,52 @@
 
         <div class="gallery-slider" id="gallerySlider">
           <article class="gallery-card">
-            <img src="assets/foto-1.webp" alt="Trabalho 1">
-            <div class="caption">Instalação com acabamento limpo.</div>
+            <img src="assets/foto-1.jpg" alt="Trabalho 1">
+            <div class="caption">Projeto com acabamento moderno e elegante.</div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/foto-2.webp" alt="Trabalho 2">
-            <div class="caption">Manutenção e limpeza profissional.</div>
+            <img src="assets/foto-2.jpg" alt="Trabalho 2">
+            <div class="caption">Detalhes em vidro valorizando o ambiente.</div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/foto-3.webp" alt="Trabalho 3">
-            <div class="caption">Infraestrutura organizada para instalação.</div>
+            <img src="assets/foto-3.jpg" alt="Trabalho 3">
+            <div class="caption">Solução sob medida com visual limpo.</div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/foto-4.webp" alt="Trabalho 4">
-            <div class="caption">Atendimento para ambientes residenciais.</div>
+            <img src="assets/foto-4.jpg" alt="Trabalho 4">
+            <div class="caption">Mais funcionalidade e sofisticação.</div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/foto-5.webp" alt="Trabalho 5">
-            <div class="caption">Serviço técnico com cuidado nos detalhes.</div>
+            <img src="assets/foto-5.jpg" alt="Trabalho 5">
+            <div class="caption">Serviço com foco em segurança e design.</div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/foto-6.webp" alt="Trabalho 6">
-            <div class="caption">Resultado final limpo e funcional.</div>
+            <img src="assets/foto-6.jpg" alt="Trabalho 6">
+            <div class="caption">Ambientes bem planejados com vidro.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-7.jpg" alt="Trabalho 7">
+            <div class="caption">Aplicação com ótimo acabamento.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-8.jpg" alt="Trabalho 8">
+            <div class="caption">Resultado final bonito e funcional.</div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="assets/foto-9.jpg" alt="Trabalho 9">
+            <div class="caption">Qualidade visual para residências e comércios.</div>
           </article>
         </div>
 
-        <div class="swipe-note">↔ Arraste para ver mais fotos</div>
+        <div class="swipe-note">↔ Arraste para ver mais imagens</div>
       </div>
     </section>
 
@@ -1119,11 +1148,9 @@
       <div class="container quote-grid">
         <div class="quote-card">
           <span class="tag">Orçamento</span>
-
           <h3>Peça seu <span>orçamento</span></h3>
-
           <p>
-            Preencha e envie direto para o WhatsApp com o serviço que você precisa.
+            Envie suas informações e abra a conversa no WhatsApp com uma mensagem pronta.
           </p>
 
           <form class="form-grid" id="quoteForm">
@@ -1138,13 +1165,14 @@
             </div>
 
             <div class="field">
-              <label for="servico">Serviço</label>
+              <label for="servico">Serviço desejado</label>
               <select id="servico" required>
                 <option value="">Selecione</option>
-                <option>Instalação de ar condicionado</option>
-                <option>Limpeza de ar condicionado</option>
-                <option>Manutenção</option>
-                <option>Infraestrutura</option>
+                <option>Box para banheiro</option>
+                <option>Espelho</option>
+                <option>Guarda-corpo</option>
+                <option>Cobertura</option>
+                <option>Esquadria</option>
                 <option>Outro serviço</option>
               </select>
             </div>
@@ -1154,29 +1182,27 @@
               <textarea id="mensagem" placeholder="Explique rapidamente o que você precisa"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-cold">
+            <button type="submit" class="btn btn-secondary">
               Enviar orçamento
             </button>
           </form>
         </div>
 
         <div class="info-card">
-          <span class="tag">Contato rápido</span>
-
-          <h3>Fale direto com a <span>PS Ar</span></h3>
-
+          <span class="tag">Contato</span>
+          <h3>Fale com a <span>Claudio Vidros</span></h3>
           <p>
-            Atendimento em Sorocaba para instalação, limpeza, manutenção e infraestrutura.
+            Atendimento com foco em qualidade, segurança e design para diferentes soluções em vidro.
           </p>
 
           <ul class="contact-list">
-            <li>WhatsApp: (15) 98151-2795</li>
-            <li>Produto/serviço: Ar condicionado</li>
-            <li>Sorocaba e região</li>
-            <li>Orçamento pelo WhatsApp</li>
+            <li>Ribeirão Preto - SP</li>
+            <li>Rua Carlos Aprobato, 60</li>
+            <li>Box, guarda-corpo, espelhos, coberturas e esquadrias</li>
+            <li>Vidros laminados e temperados</li>
           </ul>
 
-          <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Contato rápido', 'Olá, quero falar sobre um orçamento.')">
+          <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Contato rápido', 'Olá, quero falar sobre um orçamento para vidros.')">
             Chamar no WhatsApp
           </a>
         </div>
@@ -1185,24 +1211,24 @@
 
     <footer class="footer">
       <div class="container footer-wrap">
-        <p>© 2026 PS Ar Condicionado Sorocaba</p>
-        <p>Site criado para apresentação e captação de clientes.</p>
+        <p>© 2026 Claudio Vidros</p>
+        <p>Site criado para apresentação profissional e captação de clientes.</p>
       </div>
     </footer>
+
   </main>
 
   <div class="bottom-bar">
-    <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Barra fixa mobile', 'Quero solicitar um orçamento.')">
+    <a class="btn btn-wa" href="#" onclick="sendPresetMessage('Barra fixa mobile', 'Olá, quero solicitar um orçamento.')">
       WhatsApp
     </a>
-
-    <a class="btn btn-cold" href="#orcamento">
+    <a class="btn btn-primary" href="#orcamento">
       Orçamento
     </a>
   </div>
 
   <script>
-    const WHATSAPP_NUMBER = "5515981512795";
+    const WHATSAPP_NUMBER = "5516994423322";
 
     function toggleMenu(){
       document.getElementById("menu").classList.toggle("open");
@@ -1215,7 +1241,7 @@
     });
 
     function sendPresetMessage(origem, interesse){
-      const text = `Olá, vim pelo site da PS Ar Condicionado Sorocaba.\n\nOrigem: ${origem}\nInteresse: ${interesse}`;
+      const text = `Olá, vim pelo site da Claudio Vidros.\n\nOrigem: ${origem}\nInteresse: ${interesse}`;
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
     }
 
@@ -1229,8 +1255,7 @@
       const servico = document.getElementById("servico").value.trim();
       const mensagem = document.getElementById("mensagem").value.trim();
 
-      const text = `Olá, vim pelo site da PS Ar Condicionado Sorocaba e quero um orçamento.\n\nNome: ${nome}\nTelefone: ${telefone}\nServiço: ${servico}\nDetalhes: ${mensagem || "Não informado"}`;
-
+      const text = `Olá, vim pelo site da Claudio Vidros e quero um orçamento.\n\nNome: ${nome}\nTelefone: ${telefone}\nServiço: ${servico}\nDetalhes: ${mensagem || "Não informado"}`;
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
     });
 
@@ -1265,12 +1290,12 @@
 
     if(slider){
       startAutoSlide();
-
       slider.addEventListener("mouseenter", stopAutoSlide);
       slider.addEventListener("mouseleave", startAutoSlide);
       slider.addEventListener("touchstart", stopAutoSlide, { passive:true });
       slider.addEventListener("touchend", startAutoSlide);
     }
   </script>
+
 </body>
 </html>
